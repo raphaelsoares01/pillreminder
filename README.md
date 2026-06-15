@@ -3,7 +3,7 @@
 <p align="center">
   <h3 align="center">Smart Medication Adherence Platform</h3>
   <p align="center">
-    A complete platform that combines a mobile application and an IoT device to improve medication adherence and treatment monitoring.
+    A connected ecosystem that combines a mobile application, cloud services, and an IoT device to improve medication adherence and treatment monitoring.
   </p>
 </p>
 
@@ -11,9 +11,11 @@
 
 ## About
 
-PillReminder is a medication management platform designed to help users and caregivers maintain treatment routines through a combination of mobile technology and smart hardware.
+PillReminder is a smart medication management platform designed to help patients and caregivers follow treatment routines more safely and efficiently.
 
-The project integrates a mobile application developed in FlutterFlow with an ESP32-based physical device capable of assisting users during medication administration.
+The platform integrates a mobile application, Firebase cloud services, and an ESP32-powered smart device to create a complete medication adherence experience.
+
+By combining software and hardware, PillReminder provides medication scheduling, administration tracking, device synchronization, and caregiver support in a single ecosystem.
 
 ---
 
@@ -21,22 +23,24 @@ The project integrates a mobile application developed in FlutterFlow with an ESP
 
 ### Mobile Application
 
-- User authentication
-- User onboarding
+- Secure user authentication
+- User onboarding flow
 - Medication scheduling
-- Smart reminders
-- Device pairing
-- Manual device linking
+- Smart medication reminders
 - Medication administration history
+- Device management
+- Manual and automatic device linking
 - User profile management
+- Caregiver support
 
 ### Smart Device
 
-- ESP32 firmware
+- ESP32-based firmware
 - Wi-Fi connectivity
 - Physical confirmation buttons
 - Medication compartment management
-- Real-time synchronization
+- Real-time synchronization with the mobile application
+- Visual user feedback
 
 ---
 
@@ -60,6 +64,12 @@ The project integrates a mobile application developed in FlutterFlow with an ESP
 
 ---
 
+## Medication Schedule
+
+![Timer](screenshots/TimerPage.png)
+
+---
+
 ## Device Pairing
 
 ### Automatic Connection
@@ -80,12 +90,6 @@ The project integrates a mobile application developed in FlutterFlow with an ESP
 
 ---
 
-## Medication Schedule
-
-![Timer](screenshots/TimerPage.png)
-
----
-
 ## User Profile
 
 ![Profile](screenshots/ProfilePage.png)
@@ -95,36 +99,43 @@ The project integrates a mobile application developed in FlutterFlow with an ESP
 ## System Architecture
 
 ```text
-                 Mobile Application
-                         │
-                         │
-                    Wi-Fi Sync
-                         │
-                         ▼
-                 Smart Device
-                         │
-                         ▼
-                       ESP32
+                Mobile Application
+                        │
+                        │
+                Firebase Cloud
+                        │
+                        ▼
+                Smart Device
+                        │
+                        ▼
+                      ESP32
 ```
 
 ---
 
-## Technologies
+## Technology Stack
 
-### Mobile
+### Mobile Development
 
-- FlutterFlow
 - Flutter
 - Dart
+- FlutterFlow
+
+### Backend & Cloud
+
+- Firebase Authentication
+- Cloud Firestore
+- Firebase Storage
 
 ### Embedded Systems
 
 - ESP32
 - Arduino Framework
+- Wi-Fi Communication
 
-### Design
+### Design & Prototyping
 
-- Figma
+- Photoshop
 - Fusion 360
 
 ### Version Control
@@ -134,23 +145,25 @@ The project integrates a mobile application developed in FlutterFlow with an ESP
 
 ---
 
-## Current Progress
+## Development Status
 
 ### Completed
 
-- Mobile application
-- User authentication
-- Device pairing system
+- Mobile application development
+- User authentication system
 - Medication scheduling
+- Device pairing workflow
+- Firebase integration
 - ESP32 integration
 - Functional hardware prototype
 - Functional enclosure prototype
 
-### In Development
+### In Progress
 
-- PCB design
+- PCB development
 - Final enclosure version
-- Product optimization
+- Product refinement
+- System optimization
 
 ---
 
@@ -167,14 +180,16 @@ pillreminder/
 
 ---
 
-## Project Goal
+## Project Vision
 
-PillReminder aims to simplify medication management by providing an accessible ecosystem that combines mobile software and embedded hardware into a single experience.
+PillReminder was created with the goal of improving medication adherence through the integration of mobile technology, cloud services, and embedded systems.
+
+The project aims to provide a practical and accessible solution capable of assisting both patients and caregivers in treatment management.
 
 ---
 
 ## Author
 
-Raphael Soares
+**Raphael Soares Casado**
 
 GitHub: https://github.com/raphaelsoares01
